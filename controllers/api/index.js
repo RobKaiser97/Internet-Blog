@@ -1,8 +1,11 @@
+// Import the necessary modules
 const router = require('express').Router();
 const userRoutes = require('./userRoutes');
-const projectRoutes = require('./projectRoutes');
+const blogRoutes = require('./blogRoutes');
 
+// Use the userRoutes and blogRoutes for their respective endpoints
 router.use('/users', userRoutes);
-router.use('/projects', projectRoutes);
+router.use('/projects', blogRoutes); //projects needs to be changed at to correct endpoint eventually
 
-module.exports = router;
+// Export the router
+module.exports = router
