@@ -1,0 +1,58 @@
+<!-- Main Container for Editing a Post -->
+<div class="container" style="background-color: #121212; color: #FFFFFF;">
+  <!-- Card to Hold Post Edit Fields -->
+  <div class="card" style="background-color: #1E1E1E;">
+    <!-- Header for Title Field -->
+    <div class="card-header" style="background-color: #252525;">
+      <label for="edit-title" class="form-label">Title</label>
+      <textarea
+        id="edit-title"
+        class="form-control"
+        style="background-color: #333333; color: #FFFFFF;"
+        rows="1"
+      >{{post.title}}</textarea>
+    </div>
+    <!-- Body for Content Field -->
+    <div class="card-body" style="background-color: #1E1E1E;">
+      <label for="edit-content" class="form-label">Content</label>
+      <textarea
+        id="edit-content"
+        class="form-control"
+        style="background-color: #333333; color: #FFFFFF;"
+        rows="3"
+      >{{post.content}}</textarea>
+    </div>
+    <!-- Footer for Save and Delete Buttons -->
+    <div
+      class="card-footer d-flex footer-icons"
+      style="background-color: #252525;"
+    >
+      <a
+        href="#"
+        data-id="{{post.id}}"
+        id="update-link"
+        class="link-with-icon"
+        style="color: #4CAF50;"
+      >
+        <i class="fa-solid fa-floppy-disk"></i>
+        <span>Save</span>
+      </a>
+      <a
+        href="#"
+        data-id="{{post.id}}"
+        id="delete-link"
+        class="link-with-icon"
+        style="color: #F44336;"
+      >
+        <i class="fa-solid fa-trash"></i>
+        <span>Delete</span>
+      </a>
+    </div>
+  </div>
+</div>
+<style>
+  .link-with-icon { display: flex; align-items: center; margin-right: 10px; }
+  .link-with-icon i { margin-right: 5px; }
+</style>
+<!-- JavaScript for Edit Functions -->
+<script src="/js/edit.js"></script>

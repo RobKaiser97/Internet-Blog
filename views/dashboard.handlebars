@@ -1,0 +1,68 @@
+<div
+  class="container my-4"
+  style="background-color: #1a1a1a; color: #ffffff; border-radius: 12px;"
+>
+  {{#each posts}}
+    <div
+      class="card"
+      style="background-color: #333333; color: #ffffff; border: none;"
+    >
+      <div
+        class="card-header d-flex justify-content-between"
+        style="background-color: #444444; color: #ffffff;"
+      >
+        <h3 class="card-title text-center">{{title}}</h3>
+        <a href="/dashboard/post/{{id}}" style="color: #ffffff;"><i
+            class="fa-solid fa-pen-to-square"
+          ></i></a>
+      </div>
+      <div class="card-body">
+        <p class="card-text">{{content}}</p>
+      </div>
+      <div class="card-footer" style="background-color: #444444;">
+        <p><strong>Created by: </strong>{{user.username}}
+          <strong>Created on: </strong>{{format_date createdAt}}</p>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+<form
+  class="container new-post"
+  style="background-color: #333; border-radius: 12px;"
+>
+  <div class="card" style="background-color: #333; color: #ddd; border: none;">
+    <div class="card-header" style="background-color: #444;">
+      <h2 class="card-title text-center" style="color: #ddd;">Create a new post</h2>
+    </div>
+    <div class="form-group px-3">
+      <label for="post-title" style="color: #ddd;">Post Title:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="post-title"
+        placeholder="Enter post title"
+        style="background-color: #444; color: #ddd;"
+      />
+    </div>
+    <div class="form-group px-3">
+      <label for="post-body" style="color: #ddd;">Post:</label>
+      <textarea
+        type="text"
+        class="form-control"
+        id="post-body"
+        placeholder="Enter new post"
+        style="background-color: #444; color: #ddd;"
+      ></textarea>
+    </div>
+  </div>
+  <div class="text-center">
+    <button
+      type="submit"
+      class="btn btn-primary w-50"
+      style="background-color: #007bff; color: #ddd;"
+    >Submit</button>
+  </div>
+</form>
+
+<script src="/js/new-post.js"></script>

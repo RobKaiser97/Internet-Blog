@@ -1,42 +1,104 @@
-<div class="row">
-  <div class="col-md-6">
-    <h2>Login</h2>
-
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">email:</label>
-        <input class="form-input" type="text" id="email-login" />
+<!-- Main container with a dark background -->
+<div class="container mt-5" style="background-color: #1a1a1a; color: #ffffff;">
+  <div class="row">
+    <!-- Login Card -->
+    <div class="col-md-6 mx-auto">
+      <!-- Card with a slightly lighter dark background -->
+      <div class="card" style="background-color: #333333;">
+        <!-- Card Header -->
+        <div
+          class="card-header"
+          style="background-color: #444444; color: #ffffff;"
+        >
+          Login
+        </div>
+        <!-- Card Body -->
+        <div class="card-body">
+          <!-- Login Form -->
+          <form class="login-form">
+            <div class="form-group">
+              <label for="username-login">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username-login"
+                aria-describedby="emailHelp"
+                placeholder="Enter username"
+                style="background-color: #444444; color: #ffffff; border-color: #555555;"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password-login">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password-login"
+                placeholder="Password"
+                style="background-color: #444444; color: #ffffff; border-color: #555555;"
+              />
+            </div>
+            <!-- Login Button with primary color -->
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="background-color: #0066cc; color: #ffffff;"
+            >
+              Login
+            </button>
+          </form>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="password-login">password:</label>
-        <input class="form-input" type="password" id="password-login" />
+    </div>
+    <!-- Register Card -->
+    <div class="col-md-6 mx-auto">
+      <!-- Card with a slightly lighter dark background -->
+      <div class="card" style="background-color: #333333;">
+        <!-- Card Header -->
+        <div
+          class="card-header"
+          style="background-color: #444444; color: #ffffff;"
+        >
+          Register
+        </div>
+        <!-- Card Body -->
+        <div class="card-body">
+          <!-- Registration Form -->
+          <form class="signup-form">
+            <div class="form-group">
+              <label for="username-signup">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username-signup"
+                placeholder="Enter username"
+                style="background-color: #444444; color: #ffffff; border-color: #555555;"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password-signup">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password-signup"
+                placeholder="Password"
+                style="background-color: #444444; color: #ffffff; border-color: #555555;"
+              />
+            </div>
+            <!-- Register Button with primary color -->
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="background-color: #0066cc; color: #ffffff;"
+            >
+              Register
+            </button>
+          </form>
+        </div>
       </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
-      </div>
-    </form>
-  </div>
-  <div class="col-md-6">
-    <h2>Signup</h2>
-
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="name-signup">name:</label>
-        <input class="form-input" type="text" id="name-signup" />
-      </div>
-      <div class="form-group">
-        <label for="email-signup">email:</label>
-        <input class="form-input" type="text" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">signup</button>
-      </div>
-    </form>
+    </div>
   </div>
 </div>
 
-<script src="./js/login.js"></script>
+<!-- JavaScript files for login and signup functionalities -->
+<script src="/js/login.js"></script>
+<script src="/js/signup.js"></script>

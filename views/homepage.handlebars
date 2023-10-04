@@ -1,22 +1,29 @@
-<!-- Loop over each object in the projects array -->
-{{#each blogs as |blog| }}
-<div class="row mb-4 project">
-  <div class="col-md-5">
-    <h2>
-      <a href="/project/{{project.id}}">{{project.name}}</a>
-    </h2>
-    <p>
-      <span for="img" aria-label="money">💲</span>
-      <!-- Pass needed_funding value to the helper function -->
-      <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
-      needed!
-    </p>
-    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{project.description}}
-    </p>
-  </div>
+<div
+  class="container"
+  style="background-color: #1a1a1a; color: #ffffff; border-radius: 12px;"
+>
+  {{#each postData}}
+    <div
+      class="card"
+      style="background-color: #333333; color: #ffffff; border: none;"
+    >
+      <div
+        class="card-header"
+        style="background-color: #444444; color: #ffffff;"
+      >
+        <h5 class="card-title">{{title}}</h5>
+      </div>
+      <div class="card-body">
+        <a href="/post/{{id}}" style="color: #ffffff;">Read More...</a>
+      </div>
+      <div class="card-footer" style="background-color: #444444;">
+        <p class="card-text">
+          <strong>Created by:</strong>
+          {{user.username}}
+          <strong>Created on:</strong>
+          {{format_date createdAt}}
+        </p>
+      </div>
+    </div>
+  {{/each}}
 </div>
-{{/each}}

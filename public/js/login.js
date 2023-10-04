@@ -1,28 +1,27 @@
-const loginFormHandler = async (event) => {
+// Async function to handle user login
+const loginHandler = async (event) => {
   event.preventDefault();
 
-  // Collect values from the login form
-  const username = document.querySelector('#username').value.trim();
-  const password = document.querySelector('#password-login').value.trim();
+  // Grab username and password
+  const username = document.querySelector("#username-login").value.trim();
+  const password = document.querySelector("#password-login").value.trim();
 
-  if (username && password) {
-    // Send a POST request to the API endpoint
-    const response = await fetch('/api/users/login', {
-      method: 'POST',
-      body: JSON.stringify({ username, password }),
-      headers: { 'Content-Type': 'application/json' },
-    });
-
-    if (response.ok) {
-      // If successful, redirect the browser to the profile page
-      document.location.replace('/profile');
-    } else {
-      alert(response.statusText);
-    }
+  // Check for empty fields
+  if (!username || !password) {
+    alert("Please enter your username and password");
+    return;
   }
+
+  // Make an API call for login
+  const response = await fetch("/api/users/login", {
+    method: "POST",
+    body: JSON.stringify({ username, password }),
+    headers: { "Content-Type": "application/json" },
+  });
+
+  // Redirect to homepage if login is successful
+  response.ok ? document.location.replace("/") : alert("Failed to log in!");
 };
 
-document
-  .querySelector('.login-form')
-  .addEventListener('submit', loginFormHandler);
-
+// Add event listener for login form submission
+document.querySelector(".login-form").addEventListener("submit", loginHandler);
