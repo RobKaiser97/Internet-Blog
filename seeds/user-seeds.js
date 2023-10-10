@@ -2,25 +2,25 @@ const { User } = require("../models");
 
 const userData = [
   {
-    username: "FishMaster3000",
-    password: "BigFish2023",
+    username: "CodeMaster",
+    password: "Coding123",
   },
   {
-    username: "LureLover",
-    password: "Catch22",
+    username: "TechEnthusiast",
+    password: "Tech456",
   },
   {
-    username: "RiverRunner",
-    password: "StreamDream",
+    username: "WebWizard",
+    password: "WebDev789",
   },
   {
-    username: "TackleBoxTom",
-    password: "FishyPassword",
+    username: "DatabasePro",
+    password: "DBDesign101",
   },
   {
-    username: "BaitAndSwitch",
-    password: "WormLife",
-  }
+    username: "GitGuru",
+    password: "GitFlow2022",
+  },
 ];
 
 const seedUsers = () =>
