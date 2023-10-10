@@ -2,30 +2,30 @@ const { Post } = require("../models");
 
 const postData = [
   {
-    title: "The Art of Fly Fishing",
-    content: "Fly fishing is a graceful art, requiring finesse and expertise. Here are some tips to get started.",
+    title: "Getting Started with Web Development",
+    content: "Learn the fundamentals of web development and kickstart your coding journey.",
     user_id: 1,
   },
   {
-    title: "Top 5 Lures for Bass Fishing",
-    content: "When it comes to bass fishing, choosing the right lure is critical. Let's break down the top 5 lures you must have.",
+    title: "Frontend vs. Backend Development",
+    content: "Explore the key differences between frontend and backend development in the world of programming.",
     user_id: 2,
   },
   {
-    title: "Secrets of Deep Sea Fishing",
-    content: "Venture into the great blue yonder and uncover the secrets of successful deep-sea fishing.",
+    title: "The Power of JavaScript",
+    content: "Discover the versatility and importance of JavaScript in modern web development.",
     user_id: 3,
   },
   {
-    title: "Choosing the Right Fishing Rod",
-    content: "A guide to selecting the right fishing rod for beginners. Your rod is an extension of your arm!",
+    title: "Introduction to Database Design",
+    content: "Learn the basics of designing effective databases for your software projects.",
     user_id: 4,
   },
   {
-    title: "Freshwater vs Saltwater Fishing",
-    content: "Can't decide between freshwater and saltwater fishing? Let's dive into the pros and cons of both.",
+    title: "Version Control with Git",
+    content: "Master the art of version control using Git and GitHub for collaborative coding.",
     user_id: 5,
-  }
+  },
 ];
 
 const seedPosts = () => Post.bulkCreate(postData);
