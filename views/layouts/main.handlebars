@@ -16,7 +16,7 @@
     <!-- Custom Stylesheets -->
     <link rel="stylesheet" type="text/css" href="/css/jass.css" />
     <!-- Page Title -->
-    <title>Fishing Blog</title>
+    <title>Tech Blog</title>
     <!-- Nature Environment Color Adjustments -->
     <style>
       body { background-color: #1E392A; color: #C2D1C9; } nav {
@@ -29,14 +29,14 @@
       <div class="container-fluid justify-content-center">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link h5" href="/" style="color: #C2D1C9;">Home Port</a>
+            <a class="nav-link h5" href="/" style="color: #C2D1C9;">Home</a>
           </li>
           <li class="nav-item">
             <a
               class="nav-link h5"
-              href="/dashboard"
+              href="/articles"
               style="color: #C2D1C9;"
-            >Captain's Log</a>
+            >Articles</a>
           </li>
           <!-- Login Options -->
           {{log "logged in status" loggedIn}}
@@ -47,12 +47,11 @@
                 href="#"
                 id="logout-link"
                 style="color: #C2D1C9;"
-              >Abandon Ship</a>
+              >Logout</a>
             </li>
           {{else}}
             <li class="nav-item">
-              <a class="nav-link h5" href="/login" style="color: #C2D1C9;">All
-                Aboard</a>
+              <a class="nav-link h5" href="/login" style="color: #C2D1C9;">Login</a>
             </li>
           {{/if}}
         </ul>
@@ -60,9 +59,8 @@
     </nav>
     <!-- Header -->
     <header class="text-center my-4">
-      <h1>Welcome to the Fishing Blog!</h1>
-      <p class="lead">Get hooked on the latest fishing spots, techniques, and
-        gear.</p>
+      <h1>Welcome to the Tech Blog!</h1>
+      <p class="lead">Explore the latest tech articles, tips, and insights.</p>
     </header>
     <!-- Main Content -->
     <main style="background-color: #1a1a1a; color: #ffffff; padding: 20px 0;">
