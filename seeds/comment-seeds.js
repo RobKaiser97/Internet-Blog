@@ -2,30 +2,30 @@ const { Comment } = require("../models");
 
 const commentData = [
   {
-    comment: "Fly fishing has always fascinated me. Thanks for the tips!",
+    comment: "Great introduction to web development!",
     user_id: 2,
     post_id: 1,
   },
   {
-    comment: "I swear by the Wacky Worm for bass fishing!",
+    comment: "I prefer frontend development, but this is an excellent comparison.",
     user_id: 3,
     post_id: 2,
   },
   {
-    comment: "Deep-sea fishing is not for the faint of heart. Great post!",
+    comment: "JavaScript is indeed a powerful language for web development.",
     user_id: 1,
     post_id: 3,
   },
   {
-    comment: "I totally agree. Your fishing rod choice can make or break your experience.",
+    comment: "Database design is a crucial skill for any developer.",
     user_id: 5,
     post_id: 4,
   },
   {
-    comment: "Saltwater fishing is definitely more challenging, but the rewards are worth it!",
+    comment: "Git and GitHub are essential tools for collaborative coding projects.",
     user_id: 4,
     post_id: 5,
-  }
+  },
 ];
 
 const seedComments = () => Comment.bulkCreate(commentData);
