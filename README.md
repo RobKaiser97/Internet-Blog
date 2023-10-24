@@ -25,9 +25,9 @@ To get started, follow these steps:
    - `npm i`
 
 ## Usage
-To run the project locally, open your server.js integrated terminal and enter: `npm run start`. Alternatively, you can access the hosted Heroku website [here](https://still-castle-01635-146c2af47b4a.herokuapp.com/).
+To run the project locally, open your server.js integrated terminal and enter: `npm run start`. Alternatively, you can access the hosted Heroku website [here](https://internet-blog-236549cf8317.herokuapp.com/).
 
-For assistance, refer to this [demonstration video](https://drive.google.com/file/d/1ly-evfPPIuu98wUChU5bsVTcU2iFqnAn/view) on how to navigate the website. You can also find the video in the assets folder.
+For assistance, refer to this [Demonstration video](https://drive.google.com/file/d/15uKkZdIyJgNK9Hwjg7vRtEUIrwN09ZUd/view) on how to navigate the website. You can also find the video in the assets folder.
 
 ## License
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
