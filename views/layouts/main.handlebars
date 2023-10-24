@@ -34,9 +34,9 @@
           <li class="nav-item">
             <a
               class="nav-link h5"
-              href="/articles"
+              href="/dashboard"
               style="color: #C2D1C9;"
-            >Articles</a>
+            >Dashboard</a>
           </li>
           <!-- Login Options -->
           {{log "logged in status" loggedIn}}
@@ -51,7 +51,11 @@
             </li>
           {{else}}
             <li class="nav-item">
-              <a class="nav-link h5" href="/login" style="color: #C2D1C9;">Login</a>
+              <a
+                class="nav-link h5"
+                href="/login"
+                style="color: #C2D1C9;"
+              >Login</a>
             </li>
           {{/if}}
         </ul>
